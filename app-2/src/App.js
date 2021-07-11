@@ -7,13 +7,9 @@ function App() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(
-        "https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/?number=10"
-      )
-      .then((res) => {
-        setList(res.data.results);
-      });
+    axios.get("https://swapi.dev/api/people").then((res) => {
+      setList(res.data.results);
+    });
   }, []);
 
   return (
