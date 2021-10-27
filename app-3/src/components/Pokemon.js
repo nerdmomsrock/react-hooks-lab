@@ -10,12 +10,12 @@ const Pokemon = (props) => {
       setPokemon(res.data);
     });
   }, [name]);
+  return (
+    <div>
+      <h1>{pokemon.name}</h1>
+      <img alt={pokemon.name} src={pokemon.sprites?.front_default} />
+    </div>
+  );
 };
-return (
-  <div>
-    <h1>{pokemon.name}</h1>
-    <img alt={pokemon.name} src={pokemon.sprites?.fromt_default} />
-  </div>
-);
 
 export default Pokemon;

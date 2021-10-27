@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Pokemon from "./Pokemon";
-import PokemonList from "./PokemonList";
+import Pokemon from "./components/Pokemon";
+import PokemonList from "./components/PokemonList";
 
 export default (
   <Switch>
